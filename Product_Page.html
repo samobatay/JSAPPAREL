@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS APPAREL PRODUCT'S</title>
+      <link rel="stylesheet" href="Product_style.css">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&display=swap" rel="stylesheet">
+      <link rel="icon" type="image/x-icon" href="favicon-icon2.png">
+</head>
+
+<body>
+  <div class="header">
+    <img src="logo.png" class="JS">
+    <header>JS APPAREL</header>
+  </div>
+  <nav class="navbar">
+    <div class="navdiv">
+      <div class="logo"><a href="Home_Page.html"><h4>JS Apparel</a></h4></div>
+        <ul>
+          <li><a href="Home_Page.html">Home</a></li>
+          <li><a href="about_page.html">About us</a>
+             <ul class="dropdown">
+              <li><a href="contact_us.html">Contact Us</a></li>
+            </ul></li>
+          <li><a href="Product_Page">Product</a>
+            <ul class="dropdown">
+              <li><a href="Product_Page.html">Mens Apparel</a>
+                <ul class="dropdown-second">
+                  <li><a href="Product_Page.html">Sweater</a></li>
+                  <li><a href="Product_Page.html">Hawaiian Shirt</a></li>
+                  <li><a href="Product_Page.html">Jacket</a></li>
+                  <li><a href="Product_Page.html">Mens T-shirt</a></li>
+                  <li><a href="Product_Page.html">Blazer</a></li>
+                  <li><a href="Product_Page.html">Henley Shirt</a></li>
+                  <li><a href="Product_Page.html">Denim Shirt</a></li>
+                  <li><a href="Product_Page.html">Polo Shirt</a></li>
+                </ul></li>
+              <li><a href="Product_Page.html">Womens Apparel</a>
+                <ul class="dropdown-second">
+                  <li><a href="Product_Page.html">Maxi Dress</a></li>
+                  <li><a href="Product_Page.html">Bemil Dress</a></li>
+                  <li><a href="Product_Page.html">Bodycon Dress</a></li>
+                  <li><a href="Product_Page.html">Sun Dress</a></li>
+                  <li><a href="Product_Page.html">Cocktail Dress</a></li>
+                  <li><a href="Product_Page.html">Shirt Dress</a></li>
+                  <li><a href="Product_Page.html">Halter Mini Dress</a></li>
+                  <li><a href="Product_Page.html">Off-Shoulder Dress</a></li>
+                </ul></li>
+            </ul></li>
+         <li><a href="log-in_form.html">Log-in</a></li>
+         <li><a href="Registration.html">Register</a></li>
+      </ul>
+            <button class="add-to-cart" onclick="toggleSidebar()">Check cart</button>
+          </div>
+        </div>
+    </div>
+  </nav>
+
+  <main>
+    <h1>Hello Customer and Welcome to our Shop Hope you enjoy our wares!</h1>
+    <div class="Gender">
+         <button class="women" onclick="changeCategory('women')">WOMENS APPAREL</button>
+         <button class="men" onclick="changeCategory('men')">MEN APPAREL</button>
+    </div>
+     <section class="Product">
+       <h2 class="Product-category" id="changeName">Best Selling</h2>
+       <button class="pre-button"><img src="arrow.png" height="50" width="50" /></button>
+       <button class="nxt-button"><img src="arrow.png" height="50" width="50" /></button>
+
+       <div class="Product-container">
+
+         <div class="Product-card">
+           <div class="Product-image">
+             <img src="https://thestreetsofseoul.com/cdn/shop/files/Sf359f5af8c024139ab6f2bcba125062dO.webp?v=1729860059" id="PICTURE1" alt="picture1" class="product-thumb">
+             <button class="button-card" id="card-btn1" onclick="addToCart('Sweater', 1448)">add to Cart</button>
+           </div>
+        <div class="product-info">
+          <h2 class="product-brand" id="product-brand-1">Sweater</h2>
+          <span class="price" id="price-1">Php 1448.00</span>
+        </div>
+         </div>
+
+         <div class="Product-card">
+           <div class="Product-image">
+             <img src="https://i5.walmartimages.com/asr/278d0748-61b1-4b86-b74b-ad84543313ec.ed1bfde1aaa06a3477cf129c27c4b5ba.jpeg?odnHeight=612&odnWidth=612&odnBg=FFFFFF" class="product-thumb" id="PICTURE2" alt="picture2" class="product-thumb">
+             <button class="button-card" id="card-btn2" onclick="addToCart('Sundress', 1563)">add to Cart</button>
+           </div>
+        <div class="product-info">
+          <h2 class="product-brand" id="product-brand-2">Sundress</h2>
+          <span class="price" id="price-2">Php 1563.00</span>
+        </div>
+         </div>
+
+         <div class="Product-card">
+           <div class="Product-image">
+             <img src="https://eg.jumia.is/unsafe/fit-in/500x500/filters:fill(white)/product/69/469383/1.jpg?5668" class="product-thumb" id="PICTURE3" alt="picture3" class="product-thumb">
+             <button class="button-card" id="card-btn3" onclick="addToCart('Hawaiian T-shirt', 1679)">add to Cart</button>
+           </div>
+        <div class="product-info">
+          <h2 class="product-brand" id="product-brand-3">Hawaiian T-shirt</h2>
+          <span class="price" id="price-3">Php 1679.00</span>
+        </div>
+         </div>
+
+         <div class="Product-card">
+           <div class="Product-image">
+             <img src="https://s.alicdn.com/@sc04/kf/Hbe5920a516004addb2e52183c97ab944h.jpg" class="product-thumb" id="PICTURE4" alt="picture4" class="product-thumb">
+             <button class="button-card" id="card-btn4" onclick="addToCart('Bodycon Dress', 1020)">add to Cart</button>
+           </div>
+        <div class="product-info">
+          <h2 class="product-brand" id="product-brand-4">Bodycon Dress</h2>
+          <span class="price" id="price-4">Php 1020.00</span>
+        </div>
+         </div>
+
+         <div class="Product-card">
+           <div class="Product-image">
+             <img src="https://images-cdn.ubuy.co.in/667c0c25337a8c25680e58b3-summer-breathable-polo-shirts-men-korean.jpg" class="product-thumb" id="PICTURE5" alt="picture5" class="product-thumb">
+             <button class="button-card" id="card-btn5" onclick="addToCart('Polo Shirt', 895)">add to Cart</button>
+           </div>
+        <div class="product-info">
+          <h2 class="product-brand" id="product-brand-5">Polo Shirt</h2>
+          <span class="price" id="price-5">Php 895.00</span>
+        </div>
+         </div>
+
+         <div class="Product-card">
+           <div class="Product-image">
+             <img src="https://i.pinimg.com/736x/c3/1c/e5/c31ce58a31ccfcd544010eb3c52ff495.jpg" class="product-thumb" id="PICTURE6" alt="picture6" class="product-thumb">
+             <button class="button-card" id="card-btn6" onclick="addToCart('Off-Shoulder Dress', 1710)">add to Cart</button>
+           </div>
+        <div class="product-info">
+          <h2 class="product-brand" id="product-brand-6">Off-shoulder Dress</h2>
+          <span class="price" id="price-6">Php 1710.00</span>
+        </div>
+         </div>
+
+         <div class="Product-card">
+           <div class="Product-image">
+             <img src="https://ae-pic-a1.aliexpress-media.com/kf/S95c386343bc14fe3ad23559ac0bb0a77i/High-Quality-Blazer-Men-Korean-Version-of-Fashion-Youth-Business-Elegant-Simple-Casual-Wedding-Party-Performance.jpg_640x640Q90.jpg_.webp" class="product-thumb" id="PICTURE7" alt="picture7" class="product-thumb">
+             <button class="button-card" id="card-btn7" onclick="addToCart('Blazer', 2669)">add to Cart</button>
+           </div>
+        <div class="product-info">
+          <h2 class="product-brand" id="product-brand-7">Blazer</h2>
+          <span class="price" id="price-7">Php 2669.00</span>
+        </div>
+         </div>
+
+         <div class="Product-card">
+           <div class="Product-image">
+             <img src="https://amygostore.com/cdn/shop/products/IMG_8701_800x.jpg?v=1670570476" class="product-thumb" id="PICTURE8" alt="picture8" class="product-thumb">
+             <button class="button-card" id="card-btn8" onclick="addToCart('Halter Mini Dress', 1472)">add to Cart</button>
+           </div>
+        <div class="product-info">
+          <h2 class="product-brand" id="product-brand-8">Halter Mini Dress</h2>
+          <span class="price" id="price-8">Php 1472.00</span>
+        </div>
+         </div>
+
+       </div>
+     </section>
+   </main>
+    <div id="sidebar" class="sidebar">
+        <h2>Shopping Cart</h2>
+        <div id="cartItems">
+            
+        </div>
+        <button class="close-btn" onclick="toggleSidebar()">Close</button>
+        <button class="checkout-btn" onclick="checkout()">Checkout</button>
+    </div>
+
+   <footer>
+    <p>&copy; 2024 JS Apparel. All rights reserved.</p>
+</footer>
+<script>
+  
+</script>
+  <script src="Product_script.js"></script>
+  <script src="Home_script.js"></script>
+</body>
+</html>
